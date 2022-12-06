@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbarLinks">
+                <ul class="navbar-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li class="active"><a href="#admin">Admin</a></li>
+                    <li><a href="#topsellingbooks">Top Selling Books</a></li>
+                    <li><a href="#authors">Authors</a></li>
+                    <li><a href="#Checkout">Checkout</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-grid-alt menu-hamburger'></i>
+        </nav>
+        <div class="landing">
+            <h3 class="text">Welcome to the world of creativeness!</h3>
+            <p>Where your imagination comes alive and Where everything you need to know is only an arm\'s length away!</p>
+        </div>
+    </header>
+
+    <section class="info">
+        <footer class="text-center text-white" style="background-color: palevioletred;">
+            <div class="container p-4 pb-0">
+            <section class="btn">
+                <span class="me-3">Read your way to happiness</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                  Sign up!
+                </button>
+            </div>
+            </section>
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">CreativeMinds.com</a>
+          </div>
+        </footer>
+    </section>
+
+    <!--home page starts
+    <section class="home" id="home">
+        <h3>Welcome to the world of creativeness!</h3>
+    </section>
+    <!--admin page starts
+    <section class="cards" id="books">
+        <div class="admin-content">
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                    <div class="card  " style="width: 18rem;">
+                <img src="./assets/images/top seeling book1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div><div class="card" style="width: 18rem;">
+                <img src="./assets/images/topselling book2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                <img src="./assets/images/topselling book3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+              </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex   justify-content-around">
+                    <div class="card  " style="width: 18rem;">
+                <img src="./assets/images/topsellingbook4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div><div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                    <div class="card " style="width: 18rem;">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+                      <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                  
+        </div>
+    </section>-->
+
+<script src="./code.js/index.js"></script>   
+</body>
+</html>
