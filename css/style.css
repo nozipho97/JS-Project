@@ -104,3 +104,25 @@ header .landing h3,p{
     display:block;
   }
 }
+
+section .random-books{
+    box-sizing: border-box;
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-items: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+}
+
+#button{
+    align-content: center;
+    justify-items: right;
+}
+
