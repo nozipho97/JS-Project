@@ -19,9 +19,9 @@
           </a>
           <div class="navbarLinks">
             <ul class="navbar-menu">
-                <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="#">Admin</a></li>
-                <li><a href="#Checkout">Checkout</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"><a href="/product/index.html">Books</a></li>
+                <li><a href="/checkout/index.html">Checkout</a></li>
             </ul>
         </div>
       </nav>
@@ -29,16 +29,15 @@
         <div>
           Sort By:
           <select class="sort-by">
-            <option value="">Select one</option>
-            <option value="price">Price</option>
+            <option value="#">Select one</option>
+            <option value="id" onclick="form()">id</option>
           </select>
         </div>
         <div>
-          Sort Order:
-          <select class="sort-order">
-            <option value="">Select one</option>
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
+          Filter:
+          <select class="filter-by">
+            <option value="price">Cheapest</option>
+            <option value="tittle">Best Selling</option>
           </select>
         </div>
       
@@ -53,6 +52,32 @@
     <div class="container">
         <div class="table-content">
             <div class="products"></div>
+            <form action="">
+              <button type="btn" id="delBtn" onclick="form()">add</button>
+              <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p> input="Id" placeholder="enter id"</p>
+                      <p> input="tittle" placeholder="enter tittle"</p>
+                      <p> input="isnb" placeholder="enter isnb"</p>
+                      <p> input="price" placeholder="enter price"</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+            </form>
+
             <table class="table table-success table-hover">
                 <thead>
                     <th>ID</th>
@@ -63,12 +88,14 @@
                     <th>Del</th>
                 </thead>
                 <tbody class="table-body" id="table-data"></tbody>
-
             </table>
         </div>
     </div>
     </div>
-    
+    <section class="del">
+      <div class="delete"></div>
+      <button id="submit" onclick=""></button>
+    </section>
 
 
 
