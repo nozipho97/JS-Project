@@ -37,9 +37,10 @@ a
 
 .nav ul li a{
   color: yellow;
-  font-size: large;
+  font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  display: flex;
   
 
 }
@@ -76,16 +77,19 @@ header .landing h3,p{
 {
   display:flex;
   align-content: left;
+  font-size: small !important;
 }
 .navbar .navbarLinks ul li
 {
   margin:0 25px;
+  font-size: small !important;
 }
 .navbar .navbarLinks ul li.active a
 {
   color:red;
   font-weight:bold;
 }
+
 .navbar a 
 {
   color:palevioletred;
@@ -119,14 +123,13 @@ header .landing h3,p{
     display:block;
   }
 }
-
-section .random-books{
+ section .random-books{
     box-sizing: border-box;
     display: flex;
     width: 5rem;
     height: 5rem;
     justify-items: center;
-}
+} 
 
 .books{
     display: grid;
@@ -134,10 +137,15 @@ section .random-books{
     grid-template-rows: repeat(3,1fr);
     gap:20px ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#000;
+    color:#000; 
 }
 
 #button{
     align-content: center;
     justify-items: right;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
 }

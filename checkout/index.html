@@ -11,29 +11,61 @@
 </head>
 <body>
     <!--Nav Start-->
-  <nav class="navbar bg-light fixed-top shadow-sm">
-    <div class="container-lg">
-        <a class="navbar-brand" href="#">
-            <img src="./images/LOGO (2).png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-      <div class="dropdown">
-        <button class="btn btn-secondary btn-dark px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-         <i class="fas fa-bars"></i>
-        </button>
-        <ul class="dropdown-menu ">
-          <li><a class="dropdown-item" href="/index.html">Home</a></li>
-          <li><a class="dropdown-item" href="/product/index.html">Products</a></li>
-          <li><a class="dropdown-item" href="/admin/index.html"></a>Admin</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="checkout" id="checkOut">
-    <div class="checkoutList">
-    </div>
-  </section>
+    <header>
+      <nav class="navbar">
+          <div class="navbarLinks">
+              <ul class="navbar-menu">
+                  <li><a href="./index.html">Home</a></li>
+                  <li class="active"><a href="/admin/index.html">Admin</a></li>
+                  <li><a href="./product/index.html">Products</a></li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <dic class="col">
+            <button id="clear" class="btn btn-warning">Remove</button>
+          <div class="col">
+            <table class="table table-success table-hover">
+              <thead>
+                  <th>Book</th>
+                  <th>isnb</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+              </thead>
+              <tbody></tbody>
+              <tr>
+                <td>
+                </td>
+              </tr>
+            </table>
+          </div>
+         
 
-  
+
+      <h2>Checkout</h2>
+      <div class="">
+        <table>
+          <h2>Books</h2>
+          <thead>
+            <th>Book</th>
+            <th>isnb</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <button id="clear" class="btn btn-warning">Remove</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
 
 
 

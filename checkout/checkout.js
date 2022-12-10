@@ -1,6 +1,5 @@
-let checkList = JSON.parse(localStorage.getItem(".chectoutList"))
-  ? JSON.parse(localStorage.getItem(".checkoutlist"))
-  : [
+let checkOutList = 
+   [
       {
         id: 1,
         tittle: "Finding me",
@@ -61,5 +60,67 @@ let checkList = JSON.parse(localStorage.getItem(".chectoutList"))
         isnb: "98546321589964",
         price: "R129",
       }
-    ];
+  ];
+    
+  let products = JSON.parse(localStorage.getItem('checkOutList')) ?
+  JSON.parse(localStorage.getItem('checkOutList')) : 
+  JSON.parse( 
+      localStorage.setItem("checkOutList", JSON.stringify(products))
+  );
+// function showCheckOut() {
+//   if()
+// }
+  
 
+
+
+
+
+
+
+
+
+
+
+
+
+// function checkout() {
+//   checkOutList.forEach((checkOutList) => {
+//     document.querySelector(".books").innerHTML +=
+      
+    
+//           `<tr>
+//           <th scope="row">${products.id}</th>
+//           <td>${products.tittle}</td>
+//           <td>${products.isnb}</td>
+//           <td>${products.price}</td>
+//         </tr>
+//       `;
+//   });
+// }
+
+
+
+        
+        
+        
+        
+
+// const tsTittles = ([id1, id2, id3, id7]) => {
+//   return ` <div class="tsTittles">
+//               <div id="1">
+//               <img src=${books.images}
+//               </div>
+//               <div id="2">
+//               <img src=${books.images}
+//               </div>
+//               <div id="3">
+//               <img src=${books.images}
+//               </div>
+//               <div id="7">
+//               img src=${books.images}
+//               </div>
+//               </div>
+//             </div>`
+// }
+// tableDisplay();

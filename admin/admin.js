@@ -72,8 +72,6 @@ async function tableDisplay() {
             <td>${products.tittle}</td>
             <td>${products.isnb}</td>
             <td>${products.price}</td>
-            <td><i class="fa fa-pencil" aria-hidden="false"></i><button>Edit<button></td>
-            <td><button>Del<button></td>
           </tr>
         `;
   });
@@ -83,25 +81,25 @@ tableDisplay();
 
 //delete
 
-output.addEventListener('click', (e) => {
-  e.preventDefault();
-  let id = document.getElementById('')
-  let title = document.getElementById('')
-  let price = document.getElementById('')
-  let isnb = document.getElementById('')
-  // push an object into an array
-  products.push(
-    {
-      id,
-      tittle,
-      price,
-      isnb
-    }
-  )
-  // local storage
-  localStorage.setItem('data', JSON.stringify(products));
-})
-tableDisplay();
+// output.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   let id = document.getElementById('')
+//   let tittle = document.getElementById('')
+//   let price = document.getElementById('')
+//   let isnb = document.getElementById('')
+//   // push an object into an array
+//   products.push(
+//     {
+//       id,
+//       tittle,
+//       price,
+//       isnb
+//     }
+//   )
+//   // local storage
+//   localStorage.setItem('data', JSON.stringify(products));
+// })
+// tableDisplay();
 
 
 
