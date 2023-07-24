@@ -78,101 +78,32 @@ async function tableDisplay() {
 }
 tableDisplay();
 
-//Add
-const add = (e) => {
-  e.preventDefault();
-  (products = document.querySelector("#add").value),
-    (id = document.getElementById("id").value),
-    (tittle = document.getElementById("tittle").value),
-    (isnb = document.getElementById("isnb").value),
-    (price = document.getElementById("price").value),
-    products.push({
-      products,
-      id,
-      tittle,
-      isnb,
-      price,
-    });
-
-  localStorage.setItem("products", JSON.stringify(products));
-  tableDisplay();
-};
-// document.getElementById('add').addEventListener('click', add);
-
-//function adding
-function addOnClick() {
-  let name = document.getElementById("tittle").value;
+//function Adding
+function validateForm() {
+  let title = document.getElementById("title").value;
   let id = document.getElementById("id").value;
-  let description = document.getElementById("isnb").value;
+  let isbn = document.getElementById("isnb").value;
   let price = document.getElementById("price").value;
-
-  if (tittle && isnb && price && id) {
-    // let id = products.length + 1;
-    products.push({ tittle: tittle, isnb: isnb, price: price, id: id });
-    tableDisplay();
-  }
 }
+function showData(){
+  var bookList;
+  if (localStorage.getItem("bookList") == null){
+    bookList =[];
+  }
+  else{
+    bookList = JSON.parse(localStorage.getItem("bookList"))
+  }
+  var html = "";
 
-// output.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   let id = document.getElementById('')
-//   let tittle = document.getElementById('')
-//   let price = document.getElementById('')
-//   let isnb = document.getElementById('')
-//   // push an object into an array
-//   products.push(
-//     {
-//       id,
-//       tittle,
-//       price,
-//       isnb
-//     }
-//   )
-//   // local storage
-//   localStorage.setItem('data', JSON.stringify(products));
-// })
-// tableDisplay();
+  bookList.forEach(function (element,index)
+  {
+    html += "<tr>";
+    html += "<td>" + element.number + "</td>";
+    html += "<td>" + element.name + "</td";
+    html += "<td>" + element.title + "/td";
+    html += "<td>" + element.price + "/td";
+    html += `<td><button onclick="deleteData('+index+')"
+    class"btn btn-dark">Delete</button>`
+  });
 
-// let form = [{ tittle: "Finding me", price: "R450" }, { tittle: "Finding Your Truth", price: "R360" }]
-// form.sort((tittle, price) => tittle.price - tittle.price);
-
-// console.log(form);
-//   console.table(form);
-
-// form();
-// let sortButton = document.querySelector("#form");
-// sortButton.addEventListener("click", (e) => {
-//   form();
-//   tableDisplay();
-// });
-// const deleteBtn = document.querySelector(".del");
-
-//   let cheapBooks = [];
-//   for (let i = 0; i < price.length; i++) {
-//     if (price[i] <= 200) {
-//       cheapBooks.push(price[i]);
-//     }
-//   }
-
-// console.log(cheapBooks)
-// //sorting
-// function sort() {
-// const formed = products.sort(function (tittle1,tittle2) {
-//   if (tittle1.start > tittle2.start) {
-//     return 1
-//   } else {
-//     return -1
-//   }
-// })
-// //}
-// console.log(formed);
-
-// // // console.log(cheapBooks);
-// // //delete
-// function clear(id) {
-//   document.querySelector(del)
-//   let products = JSON.parse(localStorage.getItem(products))
-//   products.splice(id, 1)
-//   localStorage.setItem('products',JSON.stringify(books))
-// };
-// del();
+}

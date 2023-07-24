@@ -8,29 +8,39 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section nav>
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="/checkout/index.html">Checkout</a>
-                </li>
-                <li>
-                    <a href="/admin/index.html">Admin</a>
-                </li>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-            </ul>
-            <button type="button" class="btn btn-warning btn-xm" id="sortByPrice">Sort By Cheap Price</button>
-        </div>
-    </div>
-</section>
+    <header>
+        <nav class="navbar">
+            <div class="navbarLinks">
+                <ul class="navbar-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="active"><a href="/admin/index.html">Admin</a></li>
+                    <li><a href="./product/index.html">Books</a></li>
+                    <li><a href="./checkout/index.html">Checkout</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-grid-alt menu-hamburger'></i>
+        </nav>
+    </header>
 
-<section id="books" class="products">
-    
-    <di class="books" id="books"></div>
+    <section id="books" class="products">
+      
         
     </section>
+
+    <footer class="text-center text-white" style="background-color: white">
+        <div class="container p-4 pb-0">
+    <section class="btn">
+            <span class="me-3">Read your way to happiness</span>
+            <button type="button" class="btn btn-outline-dark btn-rounded">
+              Sign up!
+            </button>
+        </div>
+    </section>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">CreativeMinds.com</a>
+      </div>
+</footer>
     
     
     <script src="./product.js"></script>

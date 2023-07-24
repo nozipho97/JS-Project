@@ -11,37 +11,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/LOGO (2).png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            CreativeMinds
-          </a>
-          <div class="navbarLinks">
-            <ul class="navbar-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li class="active"><a href="/product/index.html">Books</a></li>
-                <li><a href="/checkout/index.html">Checkout</a></li>
-            </ul>
-        </div>
-      </nav>
-      
-
-    <div class="container">
-        <div class="table-content">
-            <div class="products">
-              <form >
-                <label for="book">Tittle:</label><br>
-                <input type="text" id="tittle" value=""><br><br>
-                <label for="isnb">Isnb:</label><br>
-                <input type="text" id="isnb" value=""><br><br>
-                <label for="price">Price:</label><br>
-                <input type="text" id="price" value=""><br><br>
-                <input type="submit" value="Add" onclick="addOnclick()" >
-              </form>
-            </div>
-=======
   <nav class="navbar">
     <div class="navbarLinks">
         <ul class="navbar-menu">
@@ -52,62 +21,50 @@
     </div>
     <i class='bx bx-grid-alt menu-hamburger'></i>
 </nav>
-      <form action="">
-        <div class="container">
-            <div class="table-content">
-                <div class="products"></div>
-                  <button type="button" id="add" class="btn btn-warning" data-target="myModal">Add a book</button>
-                  <div class="modal" tabindex="-1">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Modal title</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Modal body text goes here.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                
-              </form>
->>>>>>> 5f6cc2b2a921112417d45d8d85ba61f78da0a3fc
 
-            <table class="table table-success table-hover">
-                <thead>
-                    <th>ID</th>
-                    <th>Tittle</th>
-                    <th>ISNB</th>
-                    <th>Price</th>
-                </thead>
-                <tbody class="table-body" id="table-data"></tbody>
-            </table>
-<<<<<<< HEAD
+<div class="form-group col-md-6 mb-3" id="form">
+  <label for="name">Book ID</label>
+  <input type="number" name="number" class="form-control" id="number" placeholder="id" required>
+  <label for="name">Book Title</label>
+  <input type="text" name="title" class="form-control" id="title" placeholder="title" required>
+  <label for="name">Book ISBN</label>
+  <input type="number" name="isbn" class="form-control" id="isbn" placeholder="ISBN" required>
+  <label for="name">Book Price</label>
+  <input type="number" name="price" class="form-control" id="price" placeholder="price" required>
+</div>
+<div class="col-lg-12 mt-5">
+  <button class="btn btn-dark" id="submit"
+  onclick="AddData()">Add</button>
+  <button class="btn btn-dark" id="update"
+  onclick="UpdateData()">Update</button>
+</div>
+
+<table class="table table-success table-hover">
+  <thead>
+    <th>ID</th>
+    <th>Title</th>
+    <th>ISNB</th>
+    <th>Price</th>
+    <th><i class="fa-solid fa-trash"></i>Remove</th>
+  </thead>
+  <tbody class="table-body" id="table-data"></tbody>
+</table>
+       
+
+<footer class="text-center text-white" style="background-color: white">
+  <div class="container p-4 pb-0">
+<section class="btn">
+  <span class="me-3">Read your way to happiness</span>
+  <button type="button" class="btn btn-outline-dark btn-rounded">
+              Sign up!
+  </button>
         </div>
-    </div>
-    </div>
-    <section class="del">
-      <div class="delete"></div>
-      
-      <button id="submit" onclick=""></button>
     </section>
-
-=======
-          </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">CreativeMinds.com</a>
       </div>
-      <section class="del">
-        <div class="delete"></div>
-        <button id="submit" onclick=""></button>
-      </section>
->>>>>>> 5f6cc2b2a921112417d45d8d85ba61f78da0a3fc
-
-
+</footer>
 
 
 

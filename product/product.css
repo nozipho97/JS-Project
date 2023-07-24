@@ -12,8 +12,13 @@
     display: flex;
     text-decoration: none;
   }
-  .books{
+  /* .products{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 100px;
-  }
+  } */
+
+  /* .card-img{
+    display: flex;
+    grid-template-rows: 4;
+  } */
