@@ -85,17 +85,18 @@ let books = JSON.parse(localStorage.getItem(".books"))
 function displayBook() {
   books.forEach((books) => {
     document.querySelector("#books").innerHTML += ` 
-                            
-                        <div class="card" style="width:12rem; height:15rem">
-                        <img src="${books.Image}" class="card-img-top img-thumbnail" style="height: 7rem; width:5rem;" >
-                        <div class="card-body" d-flex="flex"; height="5vh"; width:6rem;>
-                        <h3 class="card-title">Tittle: ${books.tittle}</h3>
-                        <p class="card-text">Synopsis:${books.synopsis}</p>
-                        <p class="card-text">Price:${books.price}</p>
-                        <a href="/checkout/index.html" class="btn btn-warning" btn-sm>Add to checkout</a>
-                        </div>
-                        </div>
-                        </div>
+                  <div class="col-4 col-sm-4">
+                  <div class="card" style="">
+                  <img src="${books.Image}" class="card-img" alt="product" >
+                  <div class="card-body">
+                  <h3 class="card-title">Tittle: ${books.tittle}</h3>
+                  <p class="card-text">Synopsis:${books.synopsis}</p>
+                  <p class="card-text">Price:${books.price}</p>
+                  <router-link :to="{name: 'single', params: {id: product.prodID}}"><button type="button" class="btn btn-dark">More details</button></router-link>
+                  </div> 
+                  </div>
+                  </div>
+                  </div>
                       `;
   });
 }

@@ -1,5 +1,5 @@
-let products = JSON.parse(localStorage.getItem("#products "))
-  ? JSON.parse(localStorage.getItem("#products"))
+let products = JSON.parse(localStorage.getItem(".products "))
+  ? JSON.parse(localStorage.getItem("#.products"))
   : [
       {
         id: 1,
@@ -75,11 +75,43 @@ async function tableDisplay() {
           </tr>
         `;
   });
-  
 }
 tableDisplay();
 
-//delete
+//Add
+const add = (e) => {
+  e.preventDefault();
+  (products = document.querySelector("#add").value),
+    (id = document.getElementById("id").value),
+    (tittle = document.getElementById("tittle").value),
+    (isnb = document.getElementById("isnb").value),
+    (price = document.getElementById("price").value),
+    products.push({
+      products,
+      id,
+      tittle,
+      isnb,
+      price,
+    });
+
+  localStorage.setItem("products", JSON.stringify(products));
+  tableDisplay();
+};
+// document.getElementById('add').addEventListener('click', add);
+
+//function adding
+function addOnClick() {
+  let name = document.getElementById("tittle").value;
+  let id = document.getElementById("id").value;
+  let description = document.getElementById("isnb").value;
+  let price = document.getElementById("price").value;
+
+  if (tittle && isnb && price && id) {
+    // let id = products.length + 1;
+    products.push({ tittle: tittle, isnb: isnb, price: price, id: id });
+    tableDisplay();
+  }
+}
 
 // output.addEventListener('click', (e) => {
 //   e.preventDefault();
@@ -101,19 +133,11 @@ tableDisplay();
 // })
 // tableDisplay();
 
-
-
-
-
-
-
 // let form = [{ tittle: "Finding me", price: "R450" }, { tittle: "Finding Your Truth", price: "R360" }]
 // form.sort((tittle, price) => tittle.price - tittle.price);
 
 // console.log(form);
 //   console.table(form);
-
-
 
 // form();
 // let sortButton = document.querySelector("#form");
@@ -129,7 +153,6 @@ tableDisplay();
 //       cheapBooks.push(price[i]);
 //     }
 //   }
-
 
 // console.log(cheapBooks)
 // //sorting

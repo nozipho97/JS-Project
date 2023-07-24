@@ -25,51 +25,21 @@
             </ul>
         </div>
       </nav>
-      <div class="sort">
-        <div>
-          Sort By:
-          <select class="sort-by">
-            <option value="#">Select one</option>
-            <option value="id" onclick="form()">id</option>
-          </select>
-        </div>
-        <div>
-          Filter:
-          <select class="filter-by">
-            <option value="price">Cheapest</option>
-            <option value="tittle">Best Selling</option>
-          </select>
-        </div>
       
-
 
     <div class="container">
         <div class="table-content">
-            <div class="products"></div>
-            <form action="">
-              <button type="button" id="add" class="btn btn-warning" data-toggle="modal" data-target="myModal">Add a book</button>
-              <div class="modal" id="myModal" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Add</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                     <input placeholder="enter id" value="">
-                     <input placeholder="enter tittle" value="">
-                     <input placeholder="enter isnb" value="">
-                     <input placeholder="enter price" value="">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-warning">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </form>
+            <div class="products">
+              <form >
+                <label for="book">Tittle:</label><br>
+                <input type="text" id="tittle" value=""><br><br>
+                <label for="isnb">Isnb:</label><br>
+                <input type="text" id="isnb" value=""><br><br>
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" value=""><br><br>
+                <input type="submit" value="Add" onclick="addOnclick()" >
+              </form>
+            </div>
 
             <table class="table table-success table-hover">
                 <thead>
@@ -85,6 +55,7 @@
     </div>
     <section class="del">
       <div class="delete"></div>
+      
       <button id="submit" onclick=""></button>
     </section>
 
