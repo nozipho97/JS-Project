@@ -85,6 +85,7 @@ let books = JSON.parse(localStorage.getItem(".books"))
 function displayBook() {
   books.forEach((books) => {
     document.querySelector("#books").innerHTML += ` 
+<<<<<<< HEAD
                   <div class="col-4 col-sm-4">
                   <div class="card" style="">
                   <img src="${books.Image}" class="card-img" alt="product" >
@@ -97,6 +98,21 @@ function displayBook() {
                   </div>
                   </div>
                   </div>
+=======
+                            
+                        <div class="card d-flex" style="width:30rem; height:30rem" "d-flex:flex;">
+                        <img src="${books.Image}" class="card-img-top img-thumbnail" style="height: 7rem; width:7rem;" >
+                        <div class="card-body"; height="5rem"; width:5rem;>
+                        <h3 class="card-title">Tittle: ${books.tittle}</h3>
+                        <p class="card-text">Synopsis:${books.synopsis}</p>
+                        <p class="card-text">Price:${books.price}</p>
+                        <a href="/checkout/index.html" class="btn btn-warning btn-sm">Add to checkout</a>
+                        </div>
+                        </div>
+                        </div>
+
+                        
+>>>>>>> 5f6cc2b2a921112417d45d8d85ba61f78da0a3fc
                       `;
   });
 }
@@ -121,3 +137,13 @@ sortByPrice.addEventListener("click", (e) => {
   });
   // displayBook();
 });
+
+//filtering
+const bestSelling=[];{
+  id='1',tittle='Finding Me',price='450',synopsis='This book is all about Viola and her up bringing and tells us how she got to be the beautiful women we have grown to love.'
+  id='1',tittle='Find Your Truth',price='360',synopsis='The history in greatest racehorse in America '
+  id='1',tittle='The Mind oF The Leader',price='450',synopsis="It's a realization and attitude that we can enhance due to neuroplasticity—our ability to shape our neural makeup"
+  id='1',tittle='Dream Land',price='200',synopsis='From the author of The Wish comes a poignant love story about risking everything for a dream—and whether it is possible to leave the past behind'
+};
+const topSelling=bestSelling.filter(bestSelling=>bestSelling.id,bestSelling.tittle,bestSelling.price,bestSelling.synopsis=== 'tittle');
+

@@ -62,42 +62,30 @@ let checkOutList =
       }
   ];
     
-  let products = JSON.parse(localStorage.getItem('checkOutList')) ?
+  let checkOut = JSON.parse(localStorage.getItem('checkOutList')) ?
   JSON.parse(localStorage.getItem('checkOutList')) : 
   JSON.parse( 
-      localStorage.setItem("checkOutList", JSON.stringify(products))
+      localStorage.setItem("checkOutList", JSON.stringify(checkOutList))
   );
 // function showCheckOut() {
 //   if()
 // }
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function checkout() {
-//   checkOutList.forEach((checkOutList) => {
-//     document.querySelector(".books").innerHTML +=
+function checkout() {
+  checkOutList.forEach((checkOutList) => {
+    document.querySelector(".books").innerHTML +=
       
     
-//           `<tr>
-//           <th scope="row">${products.id}</th>
-//           <td>${products.tittle}</td>
-//           <td>${products.isnb}</td>
-//           <td>${products.price}</td>
-//         </tr>
-//       `;
-//   });
-// }
+          `<tr>
+          <th scope="row">${checkOutList.id}</th>
+          <td>${checkOutList.tittle}</td>
+          <td>${checkOutList.isnb}</td>
+          <td>${checkOutList.price}</td>
+        </tr>
+      `;
+      tableDisplay();
+  });
+}
 
 
 
